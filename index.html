@@ -1,31 +1,160 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.65">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Web Design</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      color: #1f2937;
+      background: #f8fafc;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: white;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2563eb;
+    }
+
+    nav a {
+      margin-left: 25px;
+      color: #374151;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 60px 8%;
+      background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    }
+
+    .hero-text {
+      max-width: 550px;
+    }
+
+    h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: #2563eb;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      color: white;
+      background: #2563eb;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
+    }
+
+    .hero-card {
+      padding: 80px 60px;
+      border-radius: 20px;
+      color: white;
+      background: #2563eb;
+      box-shadow: 0 15px 30px #93c5fd;
+    }
+
+    .hero-card h2 {
+      font-size: 32px;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      color: #6b7280;
+      background: white;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        display: none;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .hero-card {
+        padding: 50px 35px;
+      }
+    }
   </style>
 </head>
+
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;My First Website&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Welcome to My Website&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;I am learning Git and GitHub.&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button&gt;Click Me&lt;/button&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+  <header>
+    <div class="logo">BEL THAPA</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <section class="hero-text">
+      <h1>Build Your <span>Digital Future</span></h1>
+      <p>
+        Create beautiful, modern, and responsive websites that help your
+        business grow online.
+      </p>
+      <a class="button" href="#">Get Started</a>
+    </section>
+
+    <section class="hero-card">
+      <h2>Creative</h2>
+      <p>Simple. Modern. Powerful.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 WebStudio. All rights reserved.</p>
+  </footer>
 </body>
 </html>
