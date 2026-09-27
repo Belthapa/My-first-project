@@ -3,158 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modern Web Design</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      color: #1f2937;
-      background: #f8fafc;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 8%;
-      background: white;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #2563eb;
-    }
-
-    nav a {
-      margin-left: 25px;
-      color: #374151;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      color: #2563eb;
-    }
-
-    .hero {
-      min-height: 75vh;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      padding: 60px 8%;
-      background: linear-gradient(135deg, #dbeafe, #eff6ff);
-    }
-
-    .hero-text {
-      max-width: 550px;
-    }
-
-    h1 {
-      font-size: 52px;
-      margin-bottom: 20px;
-    }
-
-    h1 span {
-      color: #2563eb;
-    }
-
-    .hero p {
-      font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 14px 24px;
-      color: white;
-      background: #2563eb;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .button:hover {
-      background: #1d4ed8;
-    }
-
-    .hero-card {
-      padding: 80px 60px;
-      border-radius: 20px;
-      color: white;
-      background: #2563eb;
-      box-shadow: 0 15px 30px #93c5fd;
-    }
-
-    .hero-card h2 {
-      font-size: 32px;
-    }
-
-    footer {
-      padding: 20px;
-      text-align: center;
-      color: #6b7280;
-      background: white;
-    }
-
-    @media (max-width: 700px) {
-      nav {
-        display: none;
-      }
-
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 38px;
-      }
-
-      .hero-card {
-        padding: 50px 35px;
-      }
-    }
-  </style>
+  <meta name="description" content="VibeCheck — Premium DTF Printed Clothing made in Nepal." />
+  <title>VibeCheck — Wear Your Vibe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <header>
-    <div class="logo">BEL THAPA</div>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    🚚 <strong>FREE DELIVERY</strong> in Nepal on orders over Rs. 1999
+    <div class="toplinks">
+      <a href="#">Track Order</a><span>|</span>
+      <a href="#">Help Center</a><span>|</span>
+      <a href="#">♡ Wishlist</a>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a class="logo" href="#">
+      <span>Vibe</span><b>Check</b>
+    </a>
 
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <a class="active" href="#">HOME</a>
+      <a href="#shop">SHOP</a>
+      <a href="#collections">COLLECTIONS <em>NEW</em></a>
+      <a href="#custom">CUSTOM PRINT</a>
+      <a href="#about">ABOUT US</a>
+      <a href="#contact">CONTACT</a>
     </nav>
+
+    <div class="nav-actions">
+      <div class="search">
+        <input id="searchInput" type="text" placeholder="Search for products..." />
+        <span>⌕</span>
+      </div>
+      <button class="icon-btn" aria-label="Account">♙</button>
+      <button class="icon-btn badge" aria-label="Wishlist">♡<i>3</i></button>
+      <button class="icon-btn badge" aria-label="Cart">🛒<i>0</i></button>
+    </div>
   </header>
 
-  <main class="hero">
-    <section class="hero-text">
-      <h1>Build Your <span>Digital Future</span></h1>
-      <p>
-        Create beautiful, modern, and responsive websites that help your
-        business grow online.
-      </p>
-      <a class="button" href="#">Get Started</a>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">PREMIUM DTF PRINTED CLOTHING</p>
+      <h1>WEAR YOUR<br><span>VIBE.</span></h1>
+      <p class="hero-sub">Designed for Every Mood.<br>Made to Stand Out.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#shop">SHOP NOW <span>→</span></a>
+        <a class="btn outline" href="#collections">EXPLORE COLLECTION</a>
+      </div>
 
-    <section class="hero-card">
-      <h2>Creative</h2>
-      <p>Simple. Modern. Powerful.</p>
+      <div class="hero-features">
+        <div>◈ <span><b>Premium Quality</b>DTF Prints</span></div>
+        <div>♙ <span><b>100% Secure</b>Payment</span></div>
+        <div>▱ <span><b>Fast Delivery</b>All Over Nepal</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="paint x1">×</div>
+      <div class="paint x2">×</div>
+      <div class="smile">× ×<br><small>⌣</small></div>
+      <div class="model model-one">
+        <div class="head"></div><div class="body black"></div>
+      </div>
+      <div class="model model-two">
+        <div class="head"></div><div class="body white"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTIONS -->
+  <section class="container" id="collections">
+    <div class="collection-grid">
+      <a class="collection-card cyan" href="#shop"><div class="shirt-icon">♧</div><div><b>OVERSIZED<br>T-SHIRTS</b><small>View All →</small></div></a>
+      <a class="collection-card pink" href="#shop"><div class="collection-art">♟</div><div><b>ANIME<br>COLLECTION</b><small>View All →</small></div></a>
+      <a class="collection-card purple" href="#shop"><div class="collection-art">🎮</div><div><b>GAMING<br>COLLECTION</b><small>View All →</small></div></a>
+      <a class="collection-card gray" href="#shop"><div class="collection-art">☠</div><div><b>STREETWEAR<br>COLLECTION</b><small>View All →</small></div></a>
+      <a class="collection-card yellow" href="#shop"><div class="collection-art">☻</div><div><b>MEME<br>COLLECTION</b><small>View All →</small></div></a>
+      <a class="collection-card blue" href="#custom"><div class="collection-art">👕</div><div><b>CUSTOM<br>PRINT</b><small>View All →</small></div></a>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <main class="container" id="shop">
+    <div class="section-heading">
+      <h2>BEST SELLERS</h2><a href="#">View All Products →</a>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <article class="product" data-name="Uchiha Eyes Tee">
+        <div class="product-image p1"><span class="heart">♡</span><div class="shirt-print">◉<br><small>UCHIHA</small></div></div>
+        <div class="swatches"><i></i><i></i><i></i><i></i></div>
+        <h3>Uchiha Eyes Tee</h3>
+        <div class="price">Rs. 1,499 <span>★★★★★ <small>(124)</small></span></div>
+        <div class="sizes"><button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button></div>
+        <button class="cart-btn">🛒 ADD TO CART</button>
+      </article>
+
+      <article class="product" data-name="Luffy Wanted Tee">
+        <div class="product-image p2"><span class="heart">♡</span><div class="shirt-print wanted">WANTED<br><small>ONE PIECE</small></div></div>
+        <div class="swatches"></div>
+        <h3>Luffy Wanted Tee</h3>
+        <div class="price">Rs. 1,499 <span>★★★★★ <small>(98)</small></span></div>
+        <div class="sizes"><button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button></div>
+        <button class="cart-btn">🛒 ADD TO CART</button>
+      </article>
+
+      <article class="product" data-name="Anti Social Club Tee">
+        <div class="product-image p3"><span class="heart">♡</span><div class="shirt-print anti">ANTI<br>SOCIAL<br>SOCIAL CLUB</div></div>
+        <div class="swatches"></div>
+        <h3>Anti Social Club Tee</h3>
+        <div class="price">Rs. 1,599 <span>★★★★★ <small>(76)</small></span></div>
+        <div class="sizes"><button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button></div>
+        <button class="cart-btn">🛒 ADD TO CART</button>
+      </article>
+
+      <article class="product" data-name="Great Wave Tee">
+        <div class="product-image p4"><span class="heart">♡</span><div class="wave">〰〰<br>🌊<br>◉</div></div>
+        <div class="swatches"></div>
+        <h3>Great Wave Tee</h3>
+        <div class="price">Rs. 1,499 <span>★★★★★ <small>(112)</small></span></div>
+        <div class="sizes"><button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button></div>
+        <button class="cart-btn">🛒 ADD TO CART</button>
+      </article>
+    </div>
+
+    <!-- BENEFITS -->
+    <div class="benefits">
+      <div>♧<span><b>PREMIUM COTTON</b>Soft, Comfortable & Durable</span></div>
+      <div>♢<span><b>HD DTF PRINTING</b>Vibrant Colors, Long Lasting</span></div>
+      <div>▱<span><b>FAST DELIVERY</b>All Over Nepal 1–3 Days</span></div>
+      <div>↻<span><b>EASY EXCHANGE</b>Hassle Free Exchange</span></div>
+      <div>◇<span><b>SECURE PAYMENT</b>eSewa, Khalti, COD & More</span></div>
+    </div>
+
+    <!-- NEW ARRIVALS -->
+    <div class="section-heading">
+      <h2>NEW ARRIVALS</h2><a href="#">View All →</a>
+    </div>
+    <div class="new-grid">
+      <div class="mini-product"><div class="mini-img m1">☠</div><b>Tokyo Ghoul Tee</b><span>Rs. 1,499</span></div>
+      <div class="mini-product"><div class="mini-img m2">✦</div><b>Chainsaw Man Tee</b><span>Rs. 1,599</span></div>
+      <div class="mini-product"><div class="mini-img m3">🦋</div><b>Butterfly Tee</b><span>Rs. 1,399</span></div>
+      <div class="mini-product"><div class="mini-img m4">♨</div><b>Sukuna Tee</b><span>Rs. 1,499</span></div>
+      <div class="mini-product"><div class="mini-img m5">SMILE</div><b>Smile More Tee</b><span>Rs. 1,299</span></div>
+      <div class="mini-product"><div class="mini-img m6">☄</div><b>Dragon Ball Z Tee</b><span>Rs. 1,599</span></div>
+    </div>
+
+    <!-- LOWER CARDS -->
+    <section class="lower-grid">
+      <div class="review-card">
+        <h3>WHAT OUR CUSTOMERS SAY</h3>
+        <div class="stars">★★★★★</div>
+        <p>Print quality is top notch!<br>Fabric is super comfortable.<br>Highly recommended!</p>
+        <strong>— Sandeep, Kathmandu</strong>
+        <div class="dots">● ● ●</div>
+      </div>
+      <div class="insta-card">
+        <h3>FOLLOW US ON INSTAGRAM</h3>
+        <div class="insta-images"><div>TEE</div><div>TEE</div><div>TEE</div><div>TEE</div></div>
+        <button>◎ VIBECHECK.OFFICIAL</button>
+      </div>
+      <div class="subscribe-card">
+        <h3>GET 10% OFF ON YOUR FIRST ORDER</h3>
+        <p>Join our vibe community and get exclusive offers, early access & more.</p>
+        <form id="subscribeForm"><input type="email" placeholder="Enter your email address" required><button>SUBSCRIBE</button></form>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 WebStudio. All rights reserved.</p>
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Vibe<b>Check</b></div>
+        <p>Wear Your Vibe.<br>Premium DTF Printed Clothing<br>Made in Nepal 🇳🇵</p>
+      </div>
+      <div><h4>SHOP</h4><a href="#shop">All Products</a><a href="#shop">T-Shirts</a><a href="#shop">Hoodies</a><a href="#shop">Oversized Tees</a><a href="#shop">Accessories</a></div>
+      <div><h4>HELP & SUPPORT</h4><a href="#">Track Order</a><a href="#">FAQs</a><a href="#">Shipping Policy</a><a href="#">Return & Exchange</a><a href="#">Size Guide</a></div>
+      <div id="about"><h4>COMPANY</h4><a href="#">About Us</a><a href="#">Our Story</a><a href="#custom">Custom Print</a><a href="#contact">Contact Us</a><a href="#">Blog</a></div>
+      <div><h4>POLICIES</h4><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a><a href="#">Refund Policy</a></div>
+      <div><h4>CONNECT WITH US</h4><p class="socials">● ◎ ♪ ▶</p><p>💬 +977 980-1234567</p><p>✉ hello@vibecheck.com.np</p></div>
+    </div>
+    <div class="copyright">© 2026 VibeCheck.com.np — All Rights Reserved.</div>
   </footer>
+
+  <div class="toast" id="toast">Added to cart ✓</div>
+  <script src="script.js"></script>
 </body>
 </html>
